@@ -1,0 +1,98 @@
+/* header */
+#jarditou {
+    height: 70px;
+    width: 225px;
+}
+#motto {
+    display: none;
+}
+#navtop {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+a:link {
+    color: white;
+}
+a:hover {
+    color: seagreen;
+}
+a:visited {
+    color: white;
+}
+li {
+    display: inline;
+}
+#jardin {
+    position: relative;
+    left: 700px;
+    bottom: 15px;
+    font-size: 200%;
+}
+/* banner */
+#promotion {
+    width: 100%;
+}
+/* content */
+#content {
+    display: flex;
+    flex-flow: row;
+    align-items: strectch;
+}
+#texte {
+    width: 60%;
+    position: relative;
+}
+#column {
+    background-color: lightgray;
+    width: 40%;
+}
+/* footer */
+#navbottom {
+    display: flex;
+    align-items: center;
+    background: black;
+    height: 60px;
+    position: relative;
+    top: 5px;
+}
+
+/* responsive */
+
+@media screen and (max-width:768px)
+{
+    h1
+    {
+        font-size: 16px
+    }
+}
+@media screen and (max-width:768px)
+{
+    h2
+    {
+        font-size: 14px
+    }
+}
+@media screen and (max-width:768px)
+{
+    p
+    {
+        font-size: 12px
+    }
+}
+@media screen and (max-width:768px)
+{
+    #column
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:768px)
+{
+    li
+    {
+        display: flex;
+        flex-flow: wrap column;
+    }
+}
