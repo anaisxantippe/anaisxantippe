@@ -25,8 +25,8 @@ li {
     display: inline;
 }
 #jardin {
-    position: relative;
-    left: 700px;
+    display: flex;
+    align-content: space-between;
     bottom: 15px;
     font-size: 200%;
 }
