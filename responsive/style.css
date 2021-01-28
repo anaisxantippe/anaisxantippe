@@ -1,3 +1,6 @@
+html {
+    font-size: 100%;
+}
 /* header */
 #jarditou {
     height: 70px;
@@ -5,6 +8,15 @@
 }
 #motto {
     display: none;
+}
+#jardin {
+    font-size: 200%;
+    display: flex;
+    align-self: center;
+}
+#intro {
+   display: flex;
+   justify-content: space-between; 
 }
 #navtop {
     background-color: black;
@@ -23,12 +35,6 @@ a:visited {
 }
 li {
     display: inline;
-}
-#jardin {
-    display: flex;
-    align-content: space-between;
-    bottom: 15px;
-    font-size: 200%;
 }
 /* banner */
 #promotion {
@@ -64,21 +70,21 @@ li {
 {
     h1
     {
-        font-size: 16px
+        font-size: 7vw
     }
 }
 @media screen and (max-width:768px)
 {
     h2
     {
-        font-size: 14px
+        font-size: 6vw
     }
 }
 @media screen and (max-width:768px)
 {
     p
     {
-        font-size: 12px
+        font-size: 5vw
     }
 }
 @media screen and (max-width:768px)
@@ -94,5 +100,13 @@ li {
     {
         display: flex;
         flex-flow: wrap column;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:768px)
+{
+    #jardin
+    {
+        font-size: 4.5vw;
     }
 }
