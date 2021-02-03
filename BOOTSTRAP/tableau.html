@@ -1,141 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Tableau</title>
 </head>
+
 <body>
-<div class="container-fluid p-0">
+    <div class="container-fluid p-0">
 
-    <!-- Logo + motto -->
-    <div class="row">
-    <div class="col-4 d-lg-flex">
-        <img src="./img/jarditou_logo.jpg" class="img-fluid d-none d-lg-block" alt="logo jarditou" title="logo jarditou" height="60" width="200">
-    <div class="col-8 d-lg-flex justify-content-end">
-        <span class="d-none d-lg-block h1">Tout le jardin</span>
-    </div>
-    </div>
-    </div>
+        <!-- Logo + motto -->
+        <div class="row">
+            <div class="col-4 d-lg-flex">
+                <img src="./img/jarditou_logo.jpg" class="img-fluid d-none d-lg-block" alt="logo jarditou"
+                    title="logo jarditou" height="60" width="200">
+                <div class="col-8 d-lg-flex justify-content-end">
+                    <span class="d-none d-lg-block h1">Tout le jardin</span>
+                </div>
+            </div>
+        </div>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light">
-        <a class="navbar-brand" href="#">Jarditou.com</a>
-        <!-- hamburger button for smaller devices -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../BOOTSTRAP/index.html">Accueil<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../BOOTSTRAP/tableau.html">Tableau</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../BOOTSTRAP/contact.html">Contact</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
+            <a class="navbar-brand" href="#">Jarditou.com</a>
+            <!-- hamburger button for smaller devices -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../BOOTSTRAP/index.html">Accueil<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BOOTSTRAP/tableau.html">Tableau</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BOOTSTRAP/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
                     <input type="search" class="form-control mr-sm-2" placeholder="Votre promotion">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-            </form>
-        </div>
-    </nav>
+                </form>
+            </div>
+        </nav>
     </div>
 
     <!-- promotion banner -->
-        <img src="../BOOTSTRAP/img/promotion.jpg" alt="promotion sur les lattes de terrasse" class="img-fluid clo-lg-12 p-0 m-0 w-100">
+    <img src="../BOOTSTRAP/img/promotion.jpg" alt="promotion sur les lattes de terrasse"
+        class="img-fluid clo-lg-12 p-0 m-0 w-100">
 
     <!-- content -->
     <div class="row">
-    <div class="col-lg-12">
-        <table class="table">
-            <thead>
-                <tr class="table-active">
-                    <th><h3>Photo</h3></th>
-                    <th><h3>ID</h3></th>
-                    <th><h3>Catégorie</h3></th>
-                    <th><h3>Libellé</h3></th>
-                    <th><h3>Prix</h3></th>
-                    <th><h3>Couleur</h3></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-warning">
-                    <td><img width="100" height="100" src="../BOOTSTRAP/img/7.jpg" alt="barbecue Aramis" title="Barbecue Aramis"></td>
-                    <td>7</td>
-                    <td>Barbecues</td>
-                    <td>Aramis</td>
-                    <td>110.00€</td>
-                    <td>Brun</td>
-                </tr>
-                <tr>
-                    <td><img width="100" height="100" src="../BOOTSTRAP/img/8.jpg" alt="barbecue Athos" title="Barbecue Athos"></td>
-                    <td>8</td>
-                    <td>Barbecues</td>
-                    <td>Athos</td>
-                    <td>249.99€</td>
-                    <td>Noir</td>
-                </tr>
-                <tr class="table-warning">
-                    <td><img width="100" height="100" src="../BOOTSTRAP/img/11.jpg" alt="barbecue Clatronic" title="Barbecue Clatronic"></td>
-                    <td>11</td>
-                    <td>Barbecues</td>
-                    <td>Clatronic</td>
-                    <td>135.90€</td>
-                    <td>Chrome</td>
-                </tr>
-                <tr>
-                    <td><img width="100" height="100" src="../BOOTSTRAP/img/12.jpg" alt="barbecue Camping" title="Barbecue Camping"></td>
-                    <td>12</td>
-                    <td>Barbecues</td>
-                    <td>Camping</td>
-                    <td>88.00€</td>
-                    <td>Noir</td>
-                </tr>
-                <tr class="table-warning">
-                    <td><img width="100" height="70" src="../BOOTSTRAP/img/13.jpg" alt="brouette Green" title="Brouette Green"></td>
-                    <td>13</td>
-                    <td>Brouette</td>
-                    <td>Green</td>
-                    <td>49.00€</td>
-                    <td>Verte</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr>
-    </div>
+        <div class="col-lg-12">
+            <table class="table">
+                <thead>
+                    <tr class="table-active">
+                        <th>
+                            <h3>Photo</h3>
+                        </th>
+                        <th>
+                            <h3>ID</h3>
+                        </th>
+                        <th>
+                            <h3>Catégorie</h3>
+                        </th>
+                        <th>
+                            <h3>Libellé</h3>
+                        </th>
+                        <th>
+                            <h3>Prix</h3>
+                        </th>
+                        <th>
+                            <h3>Couleur</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-warning">
+                        <td><img width="100" height="100" src="../BOOTSTRAP/img/7.jpg" alt="barbecue Aramis"
+                                title="Barbecue Aramis"></td>
+                        <td>7</td>
+                        <td>Barbecues</td>
+                        <td>Aramis</td>
+                        <td>110.00€</td>
+                        <td>Brun</td>
+                    </tr>
+                    <tr>
+                        <td><img width="100" height="100" src="../BOOTSTRAP/img/8.jpg" alt="barbecue Athos"
+                                title="Barbecue Athos"></td>
+                        <td>8</td>
+                        <td>Barbecues</td>
+                        <td>Athos</td>
+                        <td>249.99€</td>
+                        <td>Noir</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td><img width="100" height="100" src="../BOOTSTRAP/img/11.jpg" alt="barbecue Clatronic"
+                                title="Barbecue Clatronic"></td>
+                        <td>11</td>
+                        <td>Barbecues</td>
+                        <td>Clatronic</td>
+                        <td>135.90€</td>
+                        <td>Chrome</td>
+                    </tr>
+                    <tr>
+                        <td><img width="100" height="100" src="../BOOTSTRAP/img/12.jpg" alt="barbecue Camping"
+                                title="Barbecue Camping"></td>
+                        <td>12</td>
+                        <td>Barbecues</td>
+                        <td>Camping</td>
+                        <td>88.00€</td>
+                        <td>Noir</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td><img width="100" height="70" src="../BOOTSTRAP/img/13.jpg" alt="brouette Green"
+                                title="Brouette Green"></td>
+                        <td>13</td>
+                        <td>Brouette</td>
+                        <td>Green</td>
+                        <td>49.00€</td>
+                        <td>Verte</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
     </div>
     </div>
 
-<!-- Footer -->
-<div class="row">
-    <div class="col-lg-12">
-<footer id="navbottom">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.lienquelconque.com">Mentions légales</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.lienquelconque.com">Horaires</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.lienquelconque.com">Plan du site</a>
-            </li>
-        </ul>
-    </nav>
-    </footer>
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-lg-12">
+            <footer id="navbottom">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.lienquelconque.com">Mentions légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.lienquelconque.com">Horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.lienquelconque.com">Plan du site</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </div>
-</div>
 
-<!-- End of container -->
-</div>
+    <!-- End of container -->
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
