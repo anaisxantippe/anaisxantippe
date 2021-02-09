@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript _ Conditions exercice 3</title>
+</head>
+<body>
+    <script>
+        var start = window.alert("Une petite calculatrice en Javascript!");
+        var number1 = window.prompt("Saisissez un premier nombre entier : ");
+        var number2 = window.prompt("Saisissez un second nombre entier : ");
+        var operator = window.prompt("Saisissez un opérateur (+, -, * ou /):");
+        var result1 = parseInt(number1)+parseInt(number2);
+        var result2 = parseInt(number1)-parseInt(number2);
+        var result3 = parseInt(number1)*parseInt(number2);
+        var result4 = parseInt(number1)/parseInt(number2);
+        if (operator==="+") {
+            window.alert(result1);
+        } else if (operator==="-") {
+            window.alert(result2);
+        } else if (operator==="*") {
+            window.alert(result3);
+        } else if (operator==="/") {
+            window.alert(result4);
+        } else {
+            window.alert("On a dit +, -, * ou / ... C'est dingue ça, recommence.");
+        }
+    </script>
+</body>
+</html>
