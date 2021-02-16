@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total d'une commande</title>
+</head>
+<body>
+    <script>
+        var pu = window.prompt("Entrez le prix unitaire du produit :"); //prix unitaire
+        var qtecom = window.prompt("Entre la quantité de produits que vous souhaitez acheter :"); //quantité commandée
+        var pap; //prix à payer
+        var tot = pu*qtecom; // prix de la commande hors frais de port et remise
+        var rem;
+        var port;
+        if (tot<100) {
+            pap = tot
+        } else if (tot<=200 && tot>=100) {
+            rem = tot*0.05
+            tot = tot-rem
+        } else {
+            rem = tot*0.1
+            tot = tot-rem
+        } if (tot<500) {
+            port = tot*0.02
+            pap = tot+port
+        } else {
+            pap = tot
+        } if (port<6) {
+            pap = tot+6
+        }
+        document.write("Votre total est de :" + pap + "€.")
+    </script>
+</body>
+</html>

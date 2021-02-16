@@ -9,23 +9,37 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         var nicks = "";
         var nick;
-        var proceed = true;
-        while (proceed) {
+        var continu = true;
+        while (continu) {
             nick = window.prompt('Entrez un prénom :');
             if (nick) {
                 nicks += nick + " "; // Ajoute le nouveau prénom ainsi qu'une
                 // espace juste après
             } else {
-                proceed = false; // Aucun prénom n'a été entré, donc on fait en
+                continu = false; // Aucun prénom n'a été entré, donc on fait en
                 // sorte d'invalider la condition
             }
         }
         alert(nicks); // Affiche les prénoms à la suite
-
+    </script> -->
+    <script>
+        var nicks = [];
+        var nick;
+        while (nick = prompt("Entrez un prénom :")); {
+        nicks.push(nick);
+    }
+    if (nicks.lenght>0) {
+        alert(nicks.join(" "));
+    } else {
+        alert("Il n'y a pas de prénom.");
+    }
+    
     </script>
+
+
 </body>
 
 </html>

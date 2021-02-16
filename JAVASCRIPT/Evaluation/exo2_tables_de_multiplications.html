@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables de multiplication</title>
+</head>
+<body>
+    <script>
+        nombre=window.prompt("Quel table souhaitez-vous afficher:","Saisir un entier ici");
+		table_multiplication(nombre);
+        function table_multiplication(nombre) //fonction définie
+		{
+		var i; //i = chiffres par lesquels le nombre entré par l'utilisateur sera multiplié
+		for (i=1; i<=10; i++) { //i est défini ici comme s'étendant de 1 à 10
+			document.write(nombre+" x "+i+"="+nombre*i+"<br>"); }  // le résultat est donné     
+		}	
+    </script>
+</body>
+</html>

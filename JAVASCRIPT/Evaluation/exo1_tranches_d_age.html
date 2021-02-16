@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tranches d'âge</title>
+  </head>
+  <body>
+    <script>
+      var age = 0;
+      var jeune = 0;
+      var adulte = 0;
+      var vieux = 0;
+
+      age = prompt("Entrez l'âge");
+      if (age == null) {
+        window.alert("Vous avez annulé.");
+      } else {
+        if (age == 0) {
+          window.alert("Vous avez entré un chiffre incorrect");
+        } else {
+          age = parseInt(age);
+          if (age > 100) {
+            vieux++;
+          } else if (age < 20) {
+            jeune++;
+          } else {
+            adulte++;
+          }
+          while (age < 100) {
+            age = parseInt(prompt("Entrez l'âge"));
+
+            if (age < 20) {
+              jeune++;
+            } else if (age >= 20 && age <= 40) {
+              adulte++;
+            } else {
+              vieux++;
+            }
+          }
+        }
+      }
+      alert(
+        "Il y a " +
+          jeune +
+          " jeune(s), \n" +
+          adulte +
+          " adulte(s), et \n" +
+          vieux +
+          " vieux (apparemment à 40 ans on est vieux, pas très sympa ça...)"
+      );
+    </script>
+  </body>
+</html>
