@@ -77,5 +77,12 @@ function checkForm(form)
         form.question.focus();
         return false;
     }
+    //
+    if(form.sujet.value == "") {
+        document.getElementById("7").style.color = "#ff0000";
+        document.getElementById("7").innerHTML = "Remplissez le champ s'il vous plait";
+        form.sujet.focus();
+        return false;
+    }
     return true;
 }
