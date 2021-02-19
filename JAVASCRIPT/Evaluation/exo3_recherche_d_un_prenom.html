@@ -7,37 +7,10 @@
     <title>Recherche d'un prénom</title>
   </head>
   <body>
-    <script>
-      var myArray = [
-        "Audrey",
-        "Aurélien",
-        "Flavien",
-        "Jérémy",
-        "Laurent",
-        "Melik",
-        "Nouara",
-        "Salem",
-        "Samuel",
-        "Stéphane",
-      ];
-      var prenom = window.prompt(
-        "Choisissez quel employé on vire aujourd'hui parmi :\n- Audrey\n- Aurélien\n- Flavien\n- Jérémy\n- Laurent\n- Melik\n- Nouara\n- Salem\n- Samuel\n- Stéphane"
-      );
-      if (myArray.includes(prenom)) { //vérifie si le prénom est bien présent dans la liste
-        myArray.splice(myArray.indexOf(prenom), 1); //retire 1 élément à partir du prénom trouvé (donc retire le prénom trouvé)
-        myArray.push(" "); //et remplace le prénom par un espace vide " "
-        document.write("Vous avez viré quelqu'un, voici les employés restants :\n");
-        document.write(myArray); //donne la liste des prénoms restants
-      } else if (prenom === null) { //si l'utilisateur appuie sur "annuler"
-        window.alert("Ne vous défilez pas, on vire quelqu'un aujourd'hui !");
-        location.reload(); //reload la page et le script
-      } else if (prenom == "") { //si l'utilisateur laisse le champ vide
-        window.alert("Ne vous défilez pas, on vire quelqu'un aujourd'hui !");
-        location.reload(); //reload la page et le script
-      } else { //si l'utilisateur entre un prénom qui n'est pas dans la liste
-        window.alert("Cet employé a déjà été viré hier, choisissez-en un autre");
-        location.reload(); //reload la page et le script
-      }
+    <!-- Un prénom est saisi au clavier. On le recherche dans le tableau tab donné ci-après.
+    Si le prénom est trouvé, on l'élimine du tableau en décalant les cases qui le suivent, et en mettant à blanc la dernière case. Si le prénom n'est pas trouvé un message d'erreur apparait et aucun prénom ne se supprime.
+    var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"]; -->
+    <script src="../Evaluation/exo3.js">
     </script>
   </body>
 </html>

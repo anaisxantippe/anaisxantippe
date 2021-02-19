@@ -7,49 +7,11 @@
     <title>Tranches d'âge</title>
   </head>
   <body>
-    <script>
-      var age = 0;
-      var jeune = 0;
-      var adulte = 0;
-      var vieux = 0;
-
-      age = prompt("Entrez l'âge");
-      if (age == null) {
-        window.alert("Vous avez annulé.");
-      } else {
-        if (age == 0) {
-          window.alert("Vous avez entré un chiffre incorrect");
-        } else {
-          age = parseInt(age);
-          if (age > 100) {
-            vieux++;
-          } else if (age < 20) {
-            jeune++;
-          } else {
-            adulte++;
-          }
-          while (age < 100) {
-            age = parseInt(prompt("Entrez l'âge"));
-
-            if (age < 20) {
-              jeune++;
-            } else if (age >= 20 && age <= 40) {
-              adulte++;
-            } else {
-              vieux++;
-            }
-          }
-        }
-      }
-      alert(
-        "Il y a " +
-          jeune +
-          " jeune(s), \n" +
-          adulte +
-          " adulte(s), et \n" +
-          vieux +
-          " vieux (apparemment à 40 ans on est vieux, pas très sympa ça...)"
-      );
+    <!-- Il s'agit de dénombrer les personnes d'âge strictement inférieur à 20 ans, les personnes d'âge strictement supérieur à 40 ans et celles dont l'âge est compris entre 20 ans et 40 ans (20 ans et 40 ans y compris).
+    Le programme doit demander les âges successifs.
+    Le comptage est arrêté dès la saisie d'un centenaire. Le centenaire est compté.
+    Donnez le programme Javascript correspondant qui affiche les résultats. -->
+    <script src="../Evaluation/exo1.js">
     </script>
   </body>
 </html>
