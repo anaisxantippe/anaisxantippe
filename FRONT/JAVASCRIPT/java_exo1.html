@@ -7,12 +7,17 @@
 </head>
 <body>
     <script>
-        var reponse1 = window.prompt("Entrez votre nom");
-        var reponse2 = window.prompt("Entrez votre prénom");
-        if (window.confirm("Êtes-vous un homme?")==true) {
-            window.alert("Bonjour Monsieur "+ reponse1 + " " + reponse2 + ". \nBienvenue sur notre site web !");
-        } else {
-            window.alert("Bonjour Madame " + reponse1 + " " + reponse2 + ". \nBienvenue sur notre site web !");
+        var teletravail = window.prompt("Puis-je me mettre en distanciel demain matin (vendredi) ? S'il te plait, répond par 'oui' ou 'non'");
+        switch (teletravail) {
+            case "oui" :
+                window.alert("Merci Laurent d'avoir dit " + teletravail);
+                break;
+            case "non" :
+                window.alert("Je suis déçue que tu aies dit " + teletravail);
+                break;
+            default :
+                window.alert("Tu évites la question je crois.");
+                break;
         }
         </script>
 </body>
