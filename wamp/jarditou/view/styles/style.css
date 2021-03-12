@@ -1,0 +1,112 @@
+html {
+    font-size: 100%;
+}
+/* header */
+#jarditou {
+    height: 70px;
+    width: 225px;
+}
+#motto {
+    display: none;
+}
+#jardin {
+    font-size: 200%;
+    display: flex;
+    align-self: center;
+}
+#intro {
+   display: flex;
+   justify-content: space-between; 
+}
+#navtop {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+a:link {
+    color: white;
+}
+a:hover {
+    color: seagreen;
+}
+a:visited {
+    color: white;
+}
+li {
+    display: inline;
+}
+/* banner */
+#promotion {
+    width: 100%;
+}
+/* content */
+#content {
+    display: flex;
+    flex-flow: row;
+    align-items: strectch;
+}
+#texte {
+    width: 60%;
+    position: relative;
+}
+#column {
+    background-color: lightgray;
+    width: 40%;
+}
+/* footer */
+#navbottom {
+    display: flex;
+    align-items: center;
+    background: black;
+    height: 60px;
+    position: relative;
+    top: 5px;
+}
+
+/* responsive */
+
+@media screen and (max-width:768px)
+{
+    h1
+    {
+        font-size: 7vw
+    }
+}
+@media screen and (max-width:768px)
+{
+    h2
+    {
+        font-size: 6vw
+    }
+}
+@media screen and (max-width:768px)
+{
+    p
+    {
+        font-size: 5vw
+    }
+}
+@media screen and (max-width:768px)
+{
+    #column
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:768px)
+{
+    li
+    {
+        display: flex;
+        flex-flow: wrap column;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:768px)
+{
+    #jardin
+    {
+        font-size: 4.5vw;
+    }
+}
