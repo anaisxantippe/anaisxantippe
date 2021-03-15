@@ -1,0 +1,6 @@
+- 👋 Hi, I’m Hanays
+- 👀 I’m interested in the beauty and creative side of everything.
+- 🌱 I know html and css pretty well, and I'm currently learning Javascript, mySQL, PHP, and Symphony.
+- 💞️ I’m looking to get better at css (that I love so much) and get a good grab at PHP and mySQL so I can become an amazing fullstack dev.
+- 👾 I have another passion : esports ! I'm currently also working in 2 esports associations, as President and Secretary General.
+- 📫 How to reach me : Xhana#2834 via Discord, via mail a.xantippe@zephyr-esport.com
